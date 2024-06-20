@@ -2,6 +2,7 @@ vim.g.mapleader = " "
 
 local keymap = vim.keymap -- for conciseness
 
+keymap.set("n", "J", "5j", { noremap = true, silent = true })
 keymap.set("n", "K", "5k", { noremap = true, silent = true })
 
 keymap.set("n", "<Esc>", ":nohl<CR>", { desc = "Clear search highlights" })
